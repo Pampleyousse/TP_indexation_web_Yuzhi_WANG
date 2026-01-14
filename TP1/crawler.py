@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-# from urllib.parse import urljoin
+from urllib.parse import urlparse
 import json
 import os
 
@@ -84,8 +84,16 @@ def crawl(url, nb_pages):
     output = []
     urls_priority = []
     urls_non_priority = []
-    urls_priority.append(url)
+    visited = set()
+    pages_max = 50
     i = 0
+
+    urls_priority.append(url)
+
+    if nb_pages > pages_max:
+        nb_pages = pages_max
+        print(f"Le nombre de pages demandé dépasse la limite maximale de "
+              f"{pages_max}. Le nombre de pages sera limité à {pages_max}.")
 
     for url in urls_priority:
 
@@ -106,7 +114,8 @@ def crawl(url, nb_pages):
             for url in list_url:
                 if url is None:
                     continue
-                if "product" in url and url not in urls_priority:
+                path = urlparse(url).path
+                if path.startswith("/product/"):
                     urls_priority.append(url)
                 elif url not in urls_non_priority:
                     urls_non_priority.append(url)
@@ -122,9 +131,9 @@ def crawl(url, nb_pages):
 
 def main():
     url = "https://web-scraping.dev/products"
-    nb_pages = 5
+    nb_pages = 50
 
-    jsonl_file = "output.jsonl"
+    jsonl_file = "output/output.jsonl"
     if os.path.exists(jsonl_file):
         print(f"Le fichier {jsonl_file} existe déjà, suppression en cours.")
         os.remove(jsonl_file)
@@ -134,7 +143,6 @@ def main():
     with open(jsonl_file, "w", encoding="utf-8") as f:
         for page in output:
             f.write(json.dumps(page, ensure_ascii=False) + "\n")
-
 
 if __name__ == "__main__":
     main()
