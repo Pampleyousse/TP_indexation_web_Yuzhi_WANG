@@ -98,7 +98,7 @@ def crawl(url, nb_pages):
     for url in urls_priority:
 
         if i >= nb_pages:
-            print("Reached maximum number of pages:", nb_pages)
+            print("Nombre maximal de page atteint:", nb_pages)
             break
 
         print("Crawling URL:", url)
@@ -115,8 +115,9 @@ def crawl(url, nb_pages):
                 if url is None:
                     continue
                 path = urlparse(url).path
-                if path.startswith("/product/"):
+                if path.startswith("/product/") and url not in visited:
                     urls_priority.append(url)
+                    visited.add(url)
                 elif url not in urls_non_priority:
                     urls_non_priority.append(url)
             # print(products)

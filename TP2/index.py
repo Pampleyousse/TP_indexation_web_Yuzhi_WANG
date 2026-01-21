@@ -4,7 +4,11 @@ import json
 import os
 import spacy
 
-spacy.cli.download("en_core_web_sm")
+try:
+    nlp = spacy.load("en_core_web_sm")
+except OSError:
+    spacy.cli.download("en_core_web_sm")
+    nlp = spacy.load("en_core_web_sm")
 
 
 # Un peu de NLP
@@ -51,6 +55,7 @@ def create_inverted_index(data, field):
                 index[token] = {}
             index[token][url] = positions[token]
 
+    print(f"L'index de {field} est créé.")
     return index
 
 
@@ -68,6 +73,7 @@ def create_reviews_index(data):
             'last_rating': last_rating
         }
     
+    print("L'index des reviews est créé.")
     return index
 
 
@@ -83,6 +89,8 @@ def create_features_index(data, feature):
                 index[token] = set()
             index[token].add(url)
 
+    index = {token: list(urls) for token, urls in index.items()}
+    print(f"L'index de feature {feature} est créé.")
     return index
 
 
@@ -106,13 +114,15 @@ def main():
     index_reviews = create_reviews_index(data)
     index_brand = create_features_index(data, 'brand')
     index_origin = create_features_index(data, 'made in')
+    index_material = create_features_index(data, 'material')
 
     export_index_to_json(index_title, 'index_title')
     export_index_to_json(index_description, 'index_description')
     export_index_to_json(index_reviews, 'index_reviews')
     export_index_to_json(index_brand, 'index_brand')
     export_index_to_json(index_origin, 'index_origin')
-    print("Index exported successfully.")
+    export_index_to_json(index_material, 'index_material')
+    print("Les index sont exportés en format json.")
 
 
 if __name__ == "__main__":

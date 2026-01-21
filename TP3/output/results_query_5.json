@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "total_documents": 156,
+    "filtered_documents": 6
+  },
+  "results": [
+    {
+      "title": "web-scraping.dev product page 2",
+      "url": "https://web-scraping.dev/products?category=consumables&page=2",
+      "description": "",
+      "score": 4.159520662218369
+    },
+    {
+      "title": "Box of Chocolate Candy",
+      "url": "https://web-scraping.dev/product/13",
+      "description": "Choose from a variety of flavors including zesty orange and sweet cherry. Each box contains an assortment of rich, flavorful chocolates with a smooth, creamy filling. Indulge your sweet tooth with our box of chocolate candy",
+      "score": 3.6592540710893218
+    },
+    {
+      "title": "Red Energy Potion - One",
+      "url": "https://web-scraping.dev/product/28?variant=one",
+      "description": "This fiery red potion delivers an explosive berry flavor and an energy kick that keeps you at the top of your game. Are you ready to level up?",
+      "score": 3.604397542256168
+    },
+    {
+      "title": "Box of Chocolate Candy",
+      "url": "https://web-scraping.dev/product/1",
+      "description": "Whether you're looking for the perfect gift or just want to treat yourself, our box of chocolate candy is sure to satisfy. Each box contains an assortment of rich, flavorful chocolates with a smooth, creamy filling. Indulge your sweet tooth with our box of chocolate candy",
+      "score": 3.575780358623579
+    },
+    {
+      "title": "Women's High Heel Sandals - Beige 7",
+      "url": "https://web-scraping.dev/product/20?variant=beige-7",
+      "description": "These sandals feature a strappy design that adds a touch of elegance to any outfit. Choose from black, red, nude, or silver to complement your wardrobe. The comfortable footbed and sturdy heel make them perfect for a night out, while the buckle closure ensures a secure fit",
+      "score": 3.4252114085591625
+    },
+    {
+      "title": "Hiking Boots for Outdoor Adventures - 7",
+      "url": "https://web-scraping.dev/product/7?variant=7",
+      "description": "These boots are designed to handle all types of terrain, from rocky trails to muddy paths. The mixed-color design adds a stylish touch to these practical boots. Gear up for your next outdoor adventure with these durable and comfortable hiking boots. They feature a waterproof upper, a rugged outsole for excellent traction, and a cushioned insole for maximum comfort",
+      "score": 3.3873363374954404
+    }
+  ]
+}
