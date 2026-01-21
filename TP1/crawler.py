@@ -14,6 +14,18 @@ headers = {
 
 # Fonction qui s’assure que le crawler a le droit de parser une page
 def can_crawl(url):
+    """
+    Check if the crawler is allowed to crawl a given URL by examining the robots.txt file.
+
+    This function sends a request to the robots.txt file of the domain and checks if
+    crawling is disallowed for all user agents.
+
+    Args:
+        url (str): The URL to check for crawling permission.
+
+    Returns:
+        bool: True if crawling is allowed, False otherwise.
+    """
     robots_url = url + "/robots.txt"
     response = requests.get(robots_url)
     if response.status_code == 200:
@@ -25,6 +37,21 @@ def can_crawl(url):
 
 # Fonction pour parser le HTML et extraire les informations
 def parse_html(url, soup):
+    """
+    Parse the HTML content of a webpage to extract product information.
+
+    This function searches for product-related elements in the BeautifulSoup object
+    and extracts details such as title, description, features, links, and reviews.
+
+    Args:
+        url (str): The URL of the webpage being parsed.
+        soup (BeautifulSoup): The parsed HTML content of the webpage.
+
+    Returns:
+        list: A list of dictionaries, each containing product information.
+              Each dictionary has keys: 'url', 'title', 'description', 'features',
+              'links', 'reviews'.
+    """
     url = url
     products = []
     product_elements = soup.find_all("body")
@@ -81,6 +108,19 @@ def parse_html(url, soup):
 
 
 def crawl(url, nb_pages):
+    """
+    Crawl a website starting from a given URL and extract product information from pages.
+
+    This function performs a breadth-first search crawl, prioritizing product pages.
+    It respects robots.txt and limits the number of pages crawled.
+
+    Args:
+        url (str): The starting URL for crawling.
+        nb_pages (int): The maximum number of pages to crawl.
+
+    Returns:
+        list: A list of product dictionaries extracted from the crawled pages.
+    """
     output = []
     urls_priority = []
     urls_non_priority = []
@@ -98,7 +138,7 @@ def crawl(url, nb_pages):
     for url in urls_priority:
 
         if i >= nb_pages:
-            print("Nombre maximal de page atteint:", nb_pages)
+            print("Page maximum to crawl:", nb_pages)
             break
 
         print("Crawling URL:", url)
@@ -131,6 +171,12 @@ def crawl(url, nb_pages):
 
 
 def main():
+    """
+    Main entry point for the web crawler script.
+
+    This function sets up the crawling parameters, runs the crawl, and saves
+    the extracted product data to a JSONL file.
+    """
     url = "https://web-scraping.dev/products"
     nb_pages = 50
 
