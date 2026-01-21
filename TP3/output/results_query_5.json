@@ -1,45 +1,93 @@
 {
-  "query": "brazil",
+  "query": "timelessfootwear",
   "metadata": {
     "total_documents": 156,
-    "filtered_documents": 6
+    "filtered_documents": 14
   },
   "results": [
     {
-      "title": "web-scraping.dev product page 2",
-      "url": "https://web-scraping.dev/products?category=consumables&page=2",
-      "description": "",
-      "score": 4.159520662218369
+      "title": "Classic Leather Sneakers - White40",
+      "url": "https://web-scraping.dev/product/11?variant=white40",
+      "description": "The sleek design and neutral color make them versatile for any occasion. Step out in style with these timeless classic leather sneakers. Made from premium genuine leather, these sneakers offer both comfort and durability",
+      "score": 5.287794741296978
     },
     {
-      "title": "Box of Chocolate Candy",
-      "url": "https://web-scraping.dev/product/13",
-      "description": "Choose from a variety of flavors including zesty orange and sweet cherry. Each box contains an assortment of rich, flavorful chocolates with a smooth, creamy filling. Indulge your sweet tooth with our box of chocolate candy",
-      "score": 3.6592540710893218
+      "title": "Classic Leather Sneakers - White40",
+      "url": "https://web-scraping.dev/product/23?variant=white40",
+      "description": "The sleek design and neutral color make them versatile for any occasion. Step out in style with these timeless classic leather sneakers. Made from premium genuine leather, these sneakers offer both comfort and durability",
+      "score": 5.287794741296978
     },
     {
-      "title": "Red Energy Potion - One",
-      "url": "https://web-scraping.dev/product/28?variant=one",
-      "description": "This fiery red potion delivers an explosive berry flavor and an energy kick that keeps you at the top of your game. Are you ready to level up?",
-      "score": 3.604397542256168
+      "title": "Classic Leather Sneakers - White41",
+      "url": "https://web-scraping.dev/product/23?variant=white41",
+      "description": "The sleek design and neutral color make them versatile for any occasion. Made from premium genuine leather, these sneakers offer both comfort and durability. Step out in style with these timeless classic leather sneakers",
+      "score": 5.287794741296978
     },
     {
-      "title": "Box of Chocolate Candy",
-      "url": "https://web-scraping.dev/product/1",
-      "description": "Whether you're looking for the perfect gift or just want to treat yourself, our box of chocolate candy is sure to satisfy. Each box contains an assortment of rich, flavorful chocolates with a smooth, creamy filling. Indulge your sweet tooth with our box of chocolate candy",
-      "score": 3.575780358623579
+      "title": "Classic Leather Sneakers - White42",
+      "url": "https://web-scraping.dev/product/11?variant=white42",
+      "description": "Made from premium genuine leather, these sneakers offer both comfort and durability. The sleek design and neutral color make them versatile for any occasion. Step out in style with these timeless classic leather sneakers",
+      "score": 5.287794741296978
     },
     {
-      "title": "Women's High Heel Sandals - Beige 7",
-      "url": "https://web-scraping.dev/product/20?variant=beige-7",
-      "description": "These sandals feature a strappy design that adds a touch of elegance to any outfit. Choose from black, red, nude, or silver to complement your wardrobe. The comfortable footbed and sturdy heel make them perfect for a night out, while the buckle closure ensures a secure fit",
-      "score": 3.4252114085591625
+      "title": "Classic Leather Sneakers - White42",
+      "url": "https://web-scraping.dev/product/23?variant=white42",
+      "description": "Step out in style with these timeless classic leather sneakers. The sleek design and neutral color make them versatile for any occasion. Made from premium genuine leather, these sneakers offer both comfort and durability",
+      "score": 5.287794741296978
     },
     {
-      "title": "Hiking Boots for Outdoor Adventures - 7",
-      "url": "https://web-scraping.dev/product/7?variant=7",
-      "description": "These boots are designed to handle all types of terrain, from rocky trails to muddy paths. The mixed-color design adds a stylish touch to these practical boots. Gear up for your next outdoor adventure with these durable and comfortable hiking boots. They feature a waterproof upper, a rugged outsole for excellent traction, and a cushioned insole for maximum comfort",
-      "score": 3.3873363374954404
+      "title": "Classic Leather Sneakers",
+      "url": "https://web-scraping.dev/product/23",
+      "description": "Whether you're dressing up for a formal event or going for a casual outing, these sneakers will complement your look perfectly. Step out in style with these timeless classic leather sneakers. Made from premium genuine leather, these sneakers offer both comfort and durability",
+      "score": 5.1844864842775005
+    },
+    {
+      "title": "Classic Leather Sneakers",
+      "url": "https://web-scraping.dev/product/11",
+      "description": "Whether you're dressing up for a formal event or going for a casual outing, these sneakers will complement your look perfectly. Made from premium genuine leather, these sneakers offer both comfort and durability. Step out in style with these timeless classic leather sneakers",
+      "score": 5.1844864842775005
+    },
+    {
+      "title": "Classic Leather Sneakers - Black42",
+      "url": "https://web-scraping.dev/product/23?variant=black42",
+      "description": "The sleek design and neutral color make them versatile for any occasion. Whether you're dressing up for a formal event or going for a casual outing, these sneakers will complement your look perfectly. Step out in style with these timeless classic leather sneakers",
+      "score": 5.156151683686071
+    },
+    {
+      "title": "Classic Leather Sneakers - White41",
+      "url": "https://web-scraping.dev/product/11?variant=white41",
+      "description": "Step out in style with these timeless classic leather sneakers. Whether you're dressing up for a formal event or going for a casual outing, these sneakers will complement your look perfectly. The sleek design and neutral color make them versatile for any occasion",
+      "score": 5.156151683686071
+    },
+    {
+      "title": "Classic Leather Sneakers - Black40",
+      "url": "https://web-scraping.dev/product/23?variant=black40",
+      "description": "Made from premium genuine leather, these sneakers offer both comfort and durability. Step out in style with these timeless classic leather sneakers. Whether you're dressing up for a formal event or going for a casual outing, these sneakers will complement your look perfectly",
+      "score": 5.156151683686071
+    },
+    {
+      "title": "Classic Leather Sneakers - Black40",
+      "url": "https://web-scraping.dev/product/11?variant=black40",
+      "description": "Whether you're dressing up for a formal event or going for a casual outing, these sneakers will complement your look perfectly. Made from premium genuine leather, these sneakers offer both comfort and durability. The sleek design and neutral color make them versatile for any occasion",
+      "score": 5.12831666870571
+    },
+    {
+      "title": "Classic Leather Sneakers - Black41",
+      "url": "https://web-scraping.dev/product/11?variant=black41",
+      "description": "Made from premium genuine leather, these sneakers offer both comfort and durability. Whether you're dressing up for a formal event or going for a casual outing, these sneakers will complement your look perfectly. The sleek design and neutral color make them versatile for any occasion",
+      "score": 5.12831666870571
+    },
+    {
+      "title": "Classic Leather Sneakers - Black42",
+      "url": "https://web-scraping.dev/product/11?variant=black42",
+      "description": "Made from premium genuine leather, these sneakers offer both comfort and durability. The sleek design and neutral color make them versatile for any occasion. Whether you're dressing up for a formal event or going for a casual outing, these sneakers will complement your look perfectly",
+      "score": 5.12831666870571
+    },
+    {
+      "title": "Classic Leather Sneakers - Black41",
+      "url": "https://web-scraping.dev/product/23?variant=black41",
+      "description": "The sleek design and neutral color make them versatile for any occasion. Whether you're dressing up for a formal event or going for a casual outing, these sneakers will complement your look perfectly. Made from premium genuine leather, these sneakers offer both comfort and durability",
+      "score": 5.12831666870571
     }
   ]
 }
